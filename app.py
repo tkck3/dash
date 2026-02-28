@@ -497,7 +497,8 @@ def update_output_fi_via_jpp(value,options):
     #  local に存在するFIについては、該当FIのTableを表示する
     #  local に存在しないFIについては JPPへアクセスして、該当FIのTableをダウンロードする
 
-    folder_path = 'd:\\python\\fi' # FI.csvが保存されているフォルダ
+    # folder_path = 'd:\\python\\fi' # FI.csvが保存されているフォルダ
+    folder_path = '.\\fi' # FI.csvが保存されているフォルダ
     
     # value=value.split('/')[0]   # valueの/より前の文字列
     value=str(value or '')    # 変数にNoneが入っている場合は右辺の空文字が採用される
