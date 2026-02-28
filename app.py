@@ -39,6 +39,9 @@ app = Dash(suppress_callback_exceptions=True, external_stylesheets=[dbc.themes.F
 # MINTY, MORPH, PULSE, QUARTZ, SANDSTONE, SIMPLEX, SKETCHY, SLATE, SOLAR, SPACELAB, 
 # SUPERHERO, UNITED, VAPOR, YETI, ZEPHYR
 
+# GunicornなどのWSGIサーバーが参照するために必要
+server = app.server 
+
 sidebar = html.Div(
     [
         dbc.Row(
@@ -553,4 +556,4 @@ def update_output_fi_via_jpp(value,options):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, port=1234)
+    app.run(debug=False)
