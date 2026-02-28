@@ -21,7 +21,7 @@ import datetime
 import io
 import os
 import re
-import tkinter.filedialog
+# import tkinter.filedialog
 import pyperclip
 
 # グローバル変数の定義
