@@ -556,4 +556,5 @@ def update_output_fi_via_jpp(value,options):
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    port = int(os.environ.get('PORT', 10000))
+    app.run(host='0.0.0.0', port=port, debug=False)
