@@ -104,7 +104,7 @@ sidebar = html.Div(
                                 #  style={'width': '95%'}
                                  ),
                     dcc.Button(id='my_button_person', n_clicks=0, children='apply',
-                                style={'marginTop': '8px', 'margin-bottom': '50px'}),
+                                style={'marginTop': '8px', 'margin-bottom': '100px'}),
                     
                     html.P('FI',
                            style={'margin-top': '16px', 'margin-bottom': '4px'},
