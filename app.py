@@ -498,7 +498,7 @@ def update_output_fi_via_jpp(value,options):
     #  local に存在しないFIについては JPPへアクセスして、該当FIのTableをダウンロードする
 
     # folder_path = 'd:\\python\\fi' # FI.csvが保存されているフォルダ
-    folder_path = '.\\FI' # FI.csvが保存されているフォルダ
+    folder_path = './FI' # FI.csvが保存されているフォルダ
     
     # value=value.split('/')[0]   # valueの/より前の文字列
     value=str(value or '')    # 変数にNoneが入っている場合は右辺の空文字が採用される
@@ -507,7 +507,7 @@ def update_output_fi_via_jpp(value,options):
     if file_name in os.listdir(folder_path):
         # print("ファイルが存在します。")
         # file_name(csvファイル)をdfに変換
-        df=pd.read_csv(folder_path+'\\'+file_name)
+        df=pd.read_csv(folder_path+'/'+file_name)
         columnDefs=[{'field': i} for i in df.columns]
         # 変換したdfをtable_fiにoutput
         
